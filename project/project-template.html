@@ -8533,7 +8533,7 @@ max      977.000000
     <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
     <span class="n">eval_metric</span><span class="o">=</span><span class="s1">'root_mean_squared_error'</span><span class="p">,</span> <span class="c1">#Set the evaluation metric</span>
     <span class="n">learner_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">"ignored_columns"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"casual"</span><span class="p">,</span> <span class="s2">"registered"</span><span class="p">]}</span> <span class="c1"># Ignore casual and registered columns</span>
-<span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">presets</span><span class="o">=</span><span class="s1">'best_quality'</span><span class="p">,</span> <span class="n">time_limit</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">dynamic_stacking</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># Use the preset best_quality</span>
+<span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">presets</span><span class="o">=</span><span class="s1">'best_quality'</span><span class="p">,</span> <span class="n">time_limit</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">dynamic_stacking</span><span class="p">)</span>  <span class="c1"># Use the preset best_quality</span>
 </pre></div>
 </div>
 </div>
@@ -10303,8 +10303,8 @@ submission.csv               2025-01-01 20:40:04  first raw submission  complete
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Specify the hyperparameters for optimization</span>
 <span class="n">hyperparameters</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">'GBM'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'extra_trees'</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">'ag_args'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'name_suffix'</span><span class="p">:</span> <span class="s1">'HPO'</span><span class="p">}},</span>  <span class="c1"># Example for GBM</span>
-    <span class="s1">'RF'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'n_estimators'</span><span class="p">:</span> <span class="mi">100</span><span class="p">}</span>  <span class="c1"># Example for Random Forest</span>
+    <span class="s1">'GBM'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'extra_trees'</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">'ag_args'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'name_suffix'</span><span class="p">:</span> <span class="s1">'HPO'</span><span class="p">}},</span>  <span class="c1"># GBM</span>
+    <span class="s1">'RF'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'n_estimators'</span><span class="p">:</span> <span class="mi">100</span><span class="p">}</span>  <span class="c1"># Random Forest</span>
 <span class="p">}</span>
 
 <span class="c1"># Set hyperparameter tuning options</span>
