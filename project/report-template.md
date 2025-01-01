@@ -28,7 +28,7 @@ With more time, additional effort could be spent on fine-tuning other hyperparam
 |--|--|--|--|--|
 |initial|extra_trees=True (LightGBM)|n_estimators=100 (RF)|Presets='best_quality'|1.80738|
 |add_features|add_features=True (datetime)|datetime processed as ints|ignored_columns=['casual', 'registered']|0.70676|
-|hpo|extra_trees=True, RandomForest L2|num_trials=10|dynamic_stacking=False|?|
+|hpo|extra_trees=True, RandomForest L2|num_trials=10|dynamic_stacking=False|0.48759|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
@@ -43,4 +43,4 @@ TODO: Replace the image below with your own.
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-TODO: Add your explanation
+The AutoGluon-based solution improved significantly through iterative feature engineering and hyperparameter tuning. The addition of datetime features and optimised hyperparameters reduced the Kaggle score from 1.80738 to 0.48759, demonstrating the value of systematic experimentation in predictive modelling.
